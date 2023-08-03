@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+        thead{
+            background-color: darkgoldenrod;
+            color: white;
+        }
+        tbody tr:nth-child(odd){
+            font-size: 1.4em;
+        }
+        tbody tr:nth-child(2n){
+            background-color: rgb(221 125 30);
+        }
+        td{
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid red;
+        }
+        th{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia de tabelas
+         Table
+            Thead
+                Tr Td Th
+            Tbody
+                Tr Td Th
+            Tfoot
+                Tr Td Th -->
+    
+    <table>
+        <caption>Ranking das melhores Universidades do Mundo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">País</th>
+                <th scope="col">Pontos</th>
+                <th scope="col">Tipo de instituição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Universidade de Harvard</td>
+                <td>Estados Unidos</td>
+                <td>100.0</td>
+                <td>Privada</td>
+            </tr>
+            <tr>
+                <td>Universidade Stanford</td>
+                <td>Estados Unidos</td>
+                <td>76.5</td>
+                <td>Privada</td>
+            </tr>
+            <tr>
+                <td>Universidade Cambridge</td>
+                <td>Reino Unido</td>
+                <td>70.9</td>
+                <td>Pública</td>
+            </tr>
+            <tr>
+                <td>Instituto de Tecnologia de Massachussetes</td>
+                <td>Estados Unidos</td>
+                <td>70.4</td>
+                <td>Privada</td>
+            </tr>
+            <tr>
+                <td>Universidade da Califórnia - Berkeley</td>
+                <td>Estados Unidos</td>
+                <td>69.1</td>
+                <td>Pública</td>
+            </tr>
+            <tr>
+                <td>Universidade Princeton</td>
+                <td>Estados Unidos</td>
+                <td>61.1</td>
+                <td>Privada</td>
+            </tr>
+            <tr>
+                <td>Universidade de Oxford</td>
+                <td>Reino Unido</td>
+                <td>60.1</td>
+                <td>Pública</td>
+            </tr>
+            <tr>
+                <td>Universidade Columbia</td>
+                <td>Estados Unidos</td>
+                <td>58.8</td>
+                <td>Privada</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
